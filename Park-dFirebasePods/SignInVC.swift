@@ -25,18 +25,18 @@ class SignInVC: UIViewController {
     }
 
     @IBAction func login(_ sender: Any) {
-        performSegue(withIdentifier: DRIVER_SEGUE, sender: nil)
-//        if emailTextField.text != "" && passwordTextField.text != "" {
-//            AuthProvider.Instance.login(withEmail: emailTextField.text!, password: passwordTextField.text!, loginHandler: { (message) in
-//                if message != nil {
-//                    self.alertTheUser(title: "Problem With Authentication", message: message!);
-//                } else {
-//                    print("Login Successful")
-//                }
-//            });
-//        } else {
-//            alertTheUser(title: "Email And Password Are Required", message: "Please enter email and password");
-//            }
+        
+        if emailTextField.text != "" && passwordTextField.text != "" {
+            AuthProvider.Instance.login(withEmail: emailTextField.text!, password: passwordTextField.text!, loginHandler: { (message) in
+                if message != nil {
+                    self.alertTheUser(title: "Problem With Authentication", message: message!);
+                } else {
+                    self.performSegue(withIdentifier: self.DRIVER_SEGUE, sender: nil)
+                }
+            });
+        } else {
+            alertTheUser(title: "Email And Password Are Required", message: "Please enter email and password");
+            }
            }
     
     @IBAction func signUp(_ sender: Any) {
@@ -45,7 +45,7 @@ class SignInVC: UIViewController {
                 if message != nil {
                     self.alertTheUser(title: "Problem With Creating New Account", message: message!)
                 } else {
-                    print("Account creating successful")
+                    self.performSegue(withIdentifier: self.DRIVER_SEGUE, sender: nil)
                 }
             })
         } else {
