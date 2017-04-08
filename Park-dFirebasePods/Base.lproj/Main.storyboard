@@ -71,10 +71,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="94.902548725637189"/>
         </scene>
-        <!--View Controller-->
+        <!--DriverVC-->
         <scene sceneID="giP-4z-bnT">
             <objects>
-                <viewController id="yGi-XX-jxP" sceneMemberID="viewController">
+                <viewController id="yGi-XX-jxP" customClass="DriverVC" customModule="Park_dFirebasePods" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KHx-3H-fZ7"/>
                         <viewControllerLayoutGuide type="bottom" id="PtK-DF-NWS"/>
@@ -93,24 +93,29 @@
                                                 <rect key="frame" x="16" y="7" width="83" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Logout"/>
+                                                <connections>
+                                                    <action selector="logout:" destination="yGi-XX-jxP" eventType="touchUpInside" id="SDj-uB-XFX"/>
+                                                </connections>
                                             </button>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nWm-la-Wug">
-                                <rect key="frame" x="0.0" y="64" width="375" height="484"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </mapView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="td0-VR-ItC">
-                                <rect key="frame" x="39" y="590" width="46" height="30"/>
+                                <rect key="frame" x="32" y="590" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Check In"/>
+                                <connections>
+                                    <action selector="checkIn:" destination="yGi-XX-jxP" eventType="touchUpInside" id="KSE-xl-lcE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBd-kf-trE">
-                                <rect key="frame" x="283" y="590" width="46" height="30"/>
+                                <rect key="frame" x="286" y="590" width="41" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Taken"/>
+                                <connections>
+                                    <action selector="taken:" destination="yGi-XX-jxP" eventType="touchUpInside" id="Rht-Ib-LMK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
