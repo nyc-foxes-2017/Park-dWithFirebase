@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		ECD281501E992CB200283BA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD2814F1E992CB200283BA6 /* AppDelegate.swift */; };
-		ECD281521E992CB200283BA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD281511E992CB200283BA6 /* ViewController.swift */; };
 		ECD281551E992CB200283BA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD281531E992CB200283BA6 /* Main.storyboard */; };
 		ECD281571E992CB200283BA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECD281561E992CB200283BA6 /* Assets.xcassets */; };
 		ECD2815A1E992CB200283BA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD281581E992CB200283BA6 /* LaunchScreen.storyboard */; };
 		ECD281651E992CB200283BA6 /* Park_dFirebasePodsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD281641E992CB200283BA6 /* Park_dFirebasePodsTests.swift */; };
 		ECD281701E992CB200283BA6 /* Park_dFirebasePodsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD2816F1E992CB200283BA6 /* Park_dFirebasePodsUITests.swift */; };
+		ECD281811E99334B00283BA6 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD281801E99334B00283BA6 /* SignInVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		ECD2814C1E992CB200283BA6 /* Park-dFirebasePods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Park-dFirebasePods.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD2814F1E992CB200283BA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ECD281511E992CB200283BA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ECD281541E992CB200283BA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECD281561E992CB200283BA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECD281591E992CB200283BA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		ECD2816B1E992CB200283BA6 /* Park-dFirebasePodsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Park-dFirebasePodsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD2816F1E992CB200283BA6 /* Park_dFirebasePodsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Park_dFirebasePodsUITests.swift; sourceTree = "<group>"; };
 		ECD281711E992CB200283BA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECD281801E99334B00283BA6 /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +97,10 @@
 		ECD2814E1E992CB200283BA6 /* Park-dFirebasePods */ = {
 			isa = PBXGroup;
 			children = (
+				ECD2817F1E9932D900283BA6 /* Controller */,
+				ECD2817E1E9932D300283BA6 /* View */,
+				ECD2817D1E9932BD00283BA6 /* Model */,
 				ECD2814F1E992CB200283BA6 /* AppDelegate.swift */,
-				ECD281511E992CB200283BA6 /* ViewController.swift */,
 				ECD281531E992CB200283BA6 /* Main.storyboard */,
 				ECD281561E992CB200283BA6 /* Assets.xcassets */,
 				ECD281581E992CB200283BA6 /* LaunchScreen.storyboard */,
@@ -123,6 +125,28 @@
 				ECD281711E992CB200283BA6 /* Info.plist */,
 			);
 			path = "Park-dFirebasePodsUITests";
+			sourceTree = "<group>";
+		};
+		ECD2817D1E9932BD00283BA6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		ECD2817E1E9932D300283BA6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		ECD2817F1E9932D900283BA6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ECD281801E99334B00283BA6 /* SignInVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECD281521E992CB200283BA6 /* ViewController.swift in Sources */,
+				ECD281811E99334B00283BA6 /* SignInVC.swift in Sources */,
 				ECD281501E992CB200283BA6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +529,7 @@
 				ECD281761E992CB200283BA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECD281771E992CB200283BA6 /* Build configuration list for PBXNativeTarget "Park-dFirebasePodsTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +538,7 @@
 				ECD281791E992CB200283BA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECD2817A1E992CB200283BA6 /* Build configuration list for PBXNativeTarget "Park-dFirebasePodsUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +547,7 @@
 				ECD2817C1E992CB200283BA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
