@@ -18,6 +18,7 @@
 		ECD281701E992CB200283BA6 /* Park_dFirebasePodsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD2816F1E992CB200283BA6 /* Park_dFirebasePodsUITests.swift */; };
 		ECD281811E99334B00283BA6 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD281801E99334B00283BA6 /* SignInVC.swift */; };
 		ECD281831E9939AE00283BA6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECD281821E9939AE00283BA6 /* GoogleService-Info.plist */; };
+		ECD281861E994A2500283BA6 /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD281851E994A2500283BA6 /* AuthProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		ECD281711E992CB200283BA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECD281801E99334B00283BA6 /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		ECD281821E9939AE00283BA6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ECD281851E994A2500283BA6 /* AuthProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 		ECD2814E1E992CB200283BA6 /* Park-dFirebasePods */ = {
 			isa = PBXGroup;
 			children = (
+				ECD281841E994A0300283BA6 /* plugins */,
 				ECD2817F1E9932D900283BA6 /* Controller */,
 				ECD2817E1E9932D300283BA6 /* View */,
 				ECD2817D1E9932BD00283BA6 /* Model */,
@@ -190,6 +193,14 @@
 				ECD281801E99334B00283BA6 /* SignInVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		ECD281841E994A0300283BA6 /* plugins */ = {
+			isa = PBXGroup;
+			children = (
+				ECD281851E994A2500283BA6 /* AuthProvider.swift */,
+			);
+			name = plugins;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -474,6 +485,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD281861E994A2500283BA6 /* AuthProvider.swift in Sources */,
 				ECD281811E99334B00283BA6 /* SignInVC.swift in Sources */,
 				ECD281501E992CB200283BA6 /* AppDelegate.swift in Sources */,
 			);

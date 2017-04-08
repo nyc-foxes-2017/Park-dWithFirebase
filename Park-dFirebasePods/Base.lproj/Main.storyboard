@@ -64,6 +64,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="0WW-vR-nGE" id="a1U-b4-qaO"/>
                         <outlet property="passwordTextField" destination="n8b-eM-NgF" id="xSb-fe-6Ia"/>
+                        <segue destination="yGi-XX-jxP" kind="show" identifier="DriverVC" id="BPE-Ri-pvy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
