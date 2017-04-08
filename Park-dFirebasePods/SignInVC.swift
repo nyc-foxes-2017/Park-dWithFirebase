@@ -39,6 +39,7 @@ class SignInVC: UIViewController {
             }
            }
     
+  
     @IBAction func signUp(_ sender: Any) {
         if emailTextField.text != "" && passwordTextField.text != "" {
             AuthProvider.Instance.signUp(withEmail: emailTextField.text!, password: passwordTextField.text!, loginHandler: { (message) in
@@ -52,6 +53,7 @@ class SignInVC: UIViewController {
             alertTheUser(title: "Email And Password Are Required", message: "Please enter email and password");
         }
     }
+ 
    
     private func alertTheUser(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert);

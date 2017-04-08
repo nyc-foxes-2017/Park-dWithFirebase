@@ -20,6 +20,8 @@
 		ECD281831E9939AE00283BA6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECD281821E9939AE00283BA6 /* GoogleService-Info.plist */; };
 		ECD281861E994A2500283BA6 /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD281851E994A2500283BA6 /* AuthProvider.swift */; };
 		ECD281881E99682100283BA6 /* DriverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD281871E99682100283BA6 /* DriverVC.swift */; };
+		ECD2818A1E9972A100283BA6 /* DBProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD281891E9972A100283BA6 /* DBProvider.swift */; };
+		ECD2818C1E99739100283BA6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD2818B1E99739100283BA6 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		ECD281821E9939AE00283BA6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ECD281851E994A2500283BA6 /* AuthProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
 		ECD281871E99682100283BA6 /* DriverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverVC.swift; sourceTree = "<group>"; };
+		ECD281891E9972A100283BA6 /* DBProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBProvider.swift; sourceTree = "<group>"; };
+		ECD2818B1E99739100283BA6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +206,8 @@
 			isa = PBXGroup;
 			children = (
 				ECD281851E994A2500283BA6 /* AuthProvider.swift */,
+				ECD281891E9972A100283BA6 /* DBProvider.swift */,
+				ECD2818B1E99739100283BA6 /* Constants.swift */,
 			);
 			name = plugins;
 			sourceTree = "<group>";
@@ -490,8 +496,10 @@
 			files = (
 				ECD281861E994A2500283BA6 /* AuthProvider.swift in Sources */,
 				ECD281811E99334B00283BA6 /* SignInVC.swift in Sources */,
+				ECD2818A1E9972A100283BA6 /* DBProvider.swift in Sources */,
 				ECD281881E99682100283BA6 /* DriverVC.swift in Sources */,
 				ECD281501E992CB200283BA6 /* AppDelegate.swift in Sources */,
+				ECD2818C1E99739100283BA6 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

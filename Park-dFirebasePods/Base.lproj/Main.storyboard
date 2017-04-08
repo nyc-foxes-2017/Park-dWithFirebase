@@ -50,12 +50,12 @@
                                     <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dw0-Wq-1wN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hc9-r4-atY">
-                                <rect key="frame" x="215" y="275" width="57" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tX-D8-Kkd">
+                                <rect key="frame" x="216" y="275" width="55" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Register"/>
+                                <state key="normal" title="Sign Up"/>
                                 <connections>
-                                    <action selector="register:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uqu-zf-RTL"/>
+                                    <action selector="signUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GQT-7m-wAq"/>
                                 </connections>
                             </button>
                         </subviews>
