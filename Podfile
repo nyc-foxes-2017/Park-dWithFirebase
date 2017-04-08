@@ -10,6 +10,7 @@ target 'Park-dFirebasePods' do
   pod 'Firebase/Core'
   pod 'Firebase/Storage'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
 
   target 'Park-dFirebasePodsTests' do
     inherit! :search_paths
