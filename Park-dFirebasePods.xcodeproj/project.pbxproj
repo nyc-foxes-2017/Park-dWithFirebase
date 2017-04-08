@@ -14,6 +14,7 @@
 		ECD281651E992CB200283BA6 /* Park_dFirebasePodsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD281641E992CB200283BA6 /* Park_dFirebasePodsTests.swift */; };
 		ECD281701E992CB200283BA6 /* Park_dFirebasePodsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD2816F1E992CB200283BA6 /* Park_dFirebasePodsUITests.swift */; };
 		ECD281811E99334B00283BA6 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD281801E99334B00283BA6 /* SignInVC.swift */; };
+		ECD281831E9939AE00283BA6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECD281821E9939AE00283BA6 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		ECD2816F1E992CB200283BA6 /* Park_dFirebasePodsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Park_dFirebasePodsUITests.swift; sourceTree = "<group>"; };
 		ECD281711E992CB200283BA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECD281801E99334B00283BA6 /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		ECD281821E9939AE00283BA6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				ECD281561E992CB200283BA6 /* Assets.xcassets */,
 				ECD281581E992CB200283BA6 /* LaunchScreen.storyboard */,
 				ECD2815B1E992CB200283BA6 /* Info.plist */,
+				ECD281821E9939AE00283BA6 /* GoogleService-Info.plist */,
 			);
 			path = "Park-dFirebasePods";
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECD2815A1E992CB200283BA6 /* LaunchScreen.storyboard in Resources */,
+				ECD281831E9939AE00283BA6 /* GoogleService-Info.plist in Resources */,
 				ECD281571E992CB200283BA6 /* Assets.xcassets in Resources */,
 				ECD281551E992CB200283BA6 /* Main.storyboard in Resources */,
 			);
