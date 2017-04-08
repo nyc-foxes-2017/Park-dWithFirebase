@@ -52,6 +52,18 @@ class AuthProvider {
         
     } //sign up func
     
+    func logOut() -> Bool {
+        if FIRAuth.auth()?.currentUser != nil {
+            do {
+                try FIRAuth.auth()?.signOut();
+                return true;
+            } catch {
+                return false;
+            }
+        }
+        return true
+    }
+    
     private func handleErrors(err: NSError, loginHandler: LoginHandler?) {
         if let errCode = FIRAuthErrorCode(rawValue: err.code) {
             switch errCode {
