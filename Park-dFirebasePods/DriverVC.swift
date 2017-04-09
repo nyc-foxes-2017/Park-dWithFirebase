@@ -28,6 +28,7 @@ class DriverVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         initializeLocationManage()
+        //display user info
         databaseRef = FIRDatabase.database().reference()
         let user = FIRAuth.auth()?.currentUser
         if let user = user {
