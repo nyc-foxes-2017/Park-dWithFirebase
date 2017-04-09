@@ -8,11 +8,17 @@
 
 import UIKit
 import MapKit
+import FirebaseDatabase
+import FirebaseAuth
 
 class DriverVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
     @IBOutlet weak var myMap: MKMapView!
     
+
+    @IBOutlet weak var currentEmail: UILabel!
+    var databaseRef: FIRDatabaseReference!
+  
     private var locationManager = CLLocationManager();
     private var userLocation: CLLocationCoordinate2D?;
 //    private var riderLocation: CLLocationCoordinate2D;
@@ -22,7 +28,12 @@ class DriverVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         initializeLocationManage()
-
+        databaseRef = FIRDatabase.database().reference()
+        let user = FIRAuth.auth()?.currentUser
+        if let user = user {
+            let email = user.email
+            self.currentEmail.text = email
+        }
         // Do any additional setup after loading the view.
     }
     

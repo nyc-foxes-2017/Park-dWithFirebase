@@ -31,7 +31,9 @@ class SignInVC: UIViewController {
                 if message != nil {
                     self.alertTheUser(title: "Problem With Authentication", message: message!);
                 } else {
+                   
                     self.performSegue(withIdentifier: self.DRIVER_SEGUE, sender: nil)
+                    
                 }
             });
         } else {
@@ -48,6 +50,7 @@ class SignInVC: UIViewController {
                 } else {
                     self.performSegue(withIdentifier: self.DRIVER_SEGUE, sender: nil)
                 }
+                
             })
         } else {
             alertTheUser(title: "Email And Password Are Required", message: "Please enter email and password");
