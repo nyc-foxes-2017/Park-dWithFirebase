@@ -14,6 +14,8 @@ class Constants {
     static let EMAIL = "email"
     static let PASSWORD = "password"
     static let DATA = "data"
+    //with points?
+    static let POINTS = "points"
     
     // Handler
     static let NAME = "name"

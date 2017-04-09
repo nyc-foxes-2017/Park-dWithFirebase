@@ -23,9 +23,9 @@ class DBProvider {
     var driversRef: FIRDatabaseReference {
         return dbRef.child(Constants.DRIVERS)
     }
-    
-    func saveUser(withID: String,email: String, password: String) {
-        let data: Dictionary<String, Any> = [Constants.EMAIL: email, Constants.PASSWORD: password];
+    // with points?
+    func saveUser(withID: String,email: String, password: String, points: Int) {
+        let data: Dictionary<String, Any> = [Constants.EMAIL: email, Constants.PASSWORD: password, Constants.POINTS: points];
         
         driversRef.child(withID).child(Constants.DATA).setValue(data);
     }
