@@ -33,6 +33,7 @@ class DriverVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         let user = FIRAuth.auth()?.currentUser
         if let user = user {
             let email = user.email
+            
             self.currentEmail.text = email
         }
         // Do any additional setup after loading the view.
