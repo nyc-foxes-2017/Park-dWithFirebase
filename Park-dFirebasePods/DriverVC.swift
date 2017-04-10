@@ -31,9 +31,12 @@ class DriverVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         //display user info
         databaseRef = FIRDatabase.database().reference()
         let user = FIRAuth.auth()?.currentUser
+        
         if let user = user {
             let email = user.email
+            let points = user.setValue(15, forKey: "points")
             
+        
             self.currentEmail.text = email
         }
         // Do any additional setup after loading the view.
