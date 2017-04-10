@@ -107,6 +107,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="td0-VR-ItC">
                                 <rect key="frame" x="32" y="590" width="60" height="30"/>
                                 <state key="normal" title="Check In"/>
@@ -114,6 +115,7 @@
                                     <action selector="checkIn:" destination="yGi-XX-jxP" eventType="touchUpInside" id="KSE-xl-lcE"/>
                                 </connections>
                             </button>
+
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBd-kf-trE">
                                 <rect key="frame" x="294" y="590" width="41" height="30"/>
                                 <state key="normal" title="Taken"/>
@@ -139,6 +141,7 @@
                             <constraint firstItem="CMS-gN-5YN" firstAttribute="trailing" secondItem="6sa-Y4-bcG" secondAttribute="trailing" id="wzz-1i-hZA"/>
                         </constraints>
                     </view>
+
                     <navigationItem key="navigationItem" id="GrX-h9-bVP"/>
                     <connections>
                         <outlet property="mapView" destination="6sa-Y4-bcG" id="bdV-Lu-vpj"/>

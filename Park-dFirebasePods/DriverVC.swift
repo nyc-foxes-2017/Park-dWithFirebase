@@ -11,6 +11,7 @@ import MapKit
 
 
 
+
 protocol HandleMapSearch {
     func dropPinZoomIn(placemark:MKPlacemark)
 }
@@ -54,6 +55,49 @@ class DriverVC: UIViewController {
             let mapItem = MKMapItem(placemark: selectedPin)
             let launchOptions = [MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving]
             mapItem.openInMaps(launchOptions: launchOptions)
+
+
+class DriverVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
+
+    @IBOutlet weak var myMap: MKMapView!
+    
+    private var locationManager = CLLocationManager();
+    private var userLocation: CLLocationCoordinate2D?;
+//    private var riderLocation: CLLocationCoordinate2D;
+    
+    
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        initializeLocationManage()
+
+        // Do any additional setup after loading the view.
+    }
+    
+    private func initializeLocationManage() {
+        locationManager.delegate = self;
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+        locationManager.requestWhenInUseAuthorization();
+        locationManager.startUpdatingLocation();
+        
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        // if we have the coordinate from the manager
+        if let location = locationManager.location?.coordinate{
+            userLocation = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
+            
+            let region = MKCoordinateRegion(center: userLocation!, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01));
+            
+            myMap.setRegion(region, animated: true);
+            
+            let annotation = MKPointAnnotation();
+            annotation.coordinate = userLocation!;
+            annotation.title = "Your Location"
+            myMap.addAnnotation(annotation)
+            
+            
+
         }
     }
 
