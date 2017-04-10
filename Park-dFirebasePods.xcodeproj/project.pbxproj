@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09A70BB71E9BBC13005A6074 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A70BB61E9BBC13005A6074 /* MapKit.framework */; };
+		09A70BB91E9BBC1E005A6074 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A70BB81E9BBC1E005A6074 /* CoreLocation.framework */; };
+		09A70BBB1E9BC049005A6074 /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A70BBA1E9BC049005A6074 /* LocationSearchTable.swift */; };
 		6D25C798241EA97A71EA40EF /* Pods_Park_dFirebasePodsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5A8DB457EAF51554DDE176 /* Pods_Park_dFirebasePodsTests.framework */; };
 		885A09EE4698EBD0F570D5BD /* Pods_Park_dFirebasePodsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D9C407A4542BA284F003678 /* Pods_Park_dFirebasePodsUITests.framework */; };
 		D62D31F2BED23330136FB700 /* Pods_Park_dFirebasePods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FB2771643F19662E29262D /* Pods_Park_dFirebasePods.framework */; };
@@ -44,6 +47,9 @@
 /* Begin PBXFileReference section */
 		0283C3E0AEB8CA3B960E1C47 /* Pods-Park-dFirebasePodsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Park-dFirebasePodsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Park-dFirebasePodsTests/Pods-Park-dFirebasePodsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		0404E5EDE8651C118CCF2976 /* Pods-Park-dFirebasePods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Park-dFirebasePods.release.xcconfig"; path = "Pods/Target Support Files/Pods-Park-dFirebasePods/Pods-Park-dFirebasePods.release.xcconfig"; sourceTree = "<group>"; };
+		09A70BB61E9BBC13005A6074 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		09A70BB81E9BBC1E005A6074 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		09A70BBA1E9BC049005A6074 /* LocationSearchTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationSearchTable.swift; path = ../LocationSearchTable.swift; sourceTree = "<group>"; };
 		0D9C407A4542BA284F003678 /* Pods_Park_dFirebasePodsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Park_dFirebasePodsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A5A8DB457EAF51554DDE176 /* Pods_Park_dFirebasePodsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Park_dFirebasePodsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40454FBDA10B2D7C1BC907AD /* Pods-Park-dFirebasePodsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Park-dFirebasePodsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Park-dFirebasePodsUITests/Pods-Park-dFirebasePodsUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09A70BB91E9BBC1E005A6074 /* CoreLocation.framework in Frameworks */,
+				09A70BB71E9BBC13005A6074 /* MapKit.framework in Frameworks */,
 				D62D31F2BED23330136FB700 /* Pods_Park_dFirebasePods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,6 +110,8 @@
 		7795560BC154F15B1F9D6025 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				09A70BB81E9BBC1E005A6074 /* CoreLocation.framework */,
+				09A70BB61E9BBC13005A6074 /* MapKit.framework */,
 				E9FB2771643F19662E29262D /* Pods_Park_dFirebasePods.framework */,
 				3A5A8DB457EAF51554DDE176 /* Pods_Park_dFirebasePodsTests.framework */,
 				0D9C407A4542BA284F003678 /* Pods_Park_dFirebasePodsUITests.framework */,
@@ -155,6 +165,7 @@
 				ECD281531E992CB200283BA6 /* Main.storyboard */,
 				ECD281561E992CB200283BA6 /* Assets.xcassets */,
 				ECD281581E992CB200283BA6 /* LaunchScreen.storyboard */,
+				09A70BBA1E9BC049005A6074 /* LocationSearchTable.swift */,
 				ECD2815B1E992CB200283BA6 /* Info.plist */,
 				ECD281821E9939AE00283BA6 /* GoogleService-Info.plist */,
 			);
@@ -494,6 +505,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09A70BBB1E9BC049005A6074 /* LocationSearchTable.swift in Sources */,
 				ECD281861E994A2500283BA6 /* AuthProvider.swift in Sources */,
 				ECD281811E99334B00283BA6 /* SignInVC.swift in Sources */,
 				ECD2818A1E9972A100283BA6 /* DBProvider.swift in Sources */,
