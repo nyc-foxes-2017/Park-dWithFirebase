@@ -28,7 +28,9 @@ class DBProvider {
         let data: Dictionary<String, Any> = [Constants.EMAIL: email, Constants.PASSWORD: password, Constants.POINTS: points];
         
         driversRef.child(withID).child(Constants.DATA).setValue(data);
+       
     }
+    
     
     
 } //class
